@@ -13,10 +13,10 @@ export function ProvideAuth({ children }) {
     return loginSuccessful;
   };
 
-  const logout = (callback) => {
-    setUser(null);
-    callback();
-  };
+  // const logout = (callback) => {
+  //   setUser(null);
+  //   callback();
+  // };
 
   return (
     <authContext.Provider value={{ user, login, logout }}>
